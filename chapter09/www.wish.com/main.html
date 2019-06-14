@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>许愿墙</title>
+    <link rel=stylesheet href="./css/style.css">
+  </head>
+  <body>
+    <div class="top">
+      <div class="container"><h1><a href="index.php">许愿墙</a></h1></div>
+    </div>
+    <div class="container note">
+      <div class="note-top"><div class="note-top-add">我要许愿</div></div>
+      <div class="note-box">
+        <!-- 输出许愿墙 -->
+        <?php foreach ($row as $v): ?>
+          <div class="note-list note-list- <?php $v['color'] ?>">
+            <div class="note-list-action">
+              <a class="note-list-edit" href="" title="修改">✎</a>
+              <a class="note-list-delete" href=" " title="删除">×</a>
+            </div>
+
+            <ul class="note-list-box">
+              <li class="note-list-name">  from:<span> <?php echo $v['name'] ?></span></li>
+              <li class="note-list-content">   <?php echo $v['content'] ?>            </li>
+              <li class="note-list-date">      <?php echo $v['time'] ?>              </li>
+            </ul>
+          </div>
+        <?php endforeach; ?>
+      </div>
+      
+      <!-- 添加愿望表单 -->
+       
+      <!-- 编辑愿望表单 -->
+      
+      <!-- 分页链接 -->
+      <div class="note-page">
+      
+      </div>
+    </div>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/common.js"></script>
+  </body>
+</html>

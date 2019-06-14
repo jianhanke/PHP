@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<from action="#" method="get">
+	请输入关键词: <input type="text" name="user_name" autocomplete="on" autofocus="autofocus"> <br />
+	<input type="submit" value="提交"><br /><br /><br />
+
+	</from>
+
+	<from action="#" method="get" id="user_from">
+		请输入您的姓名: <input type="text" name="first_name">
+		<input type="submit" value="提交">
+	</from>
+	<p>
+	早知道是专业那共享么 早知道是专业那共享梦一场	早知道是这样像梦一场	早知道是这样羡慕故意茶馆
+	</p>
+	请输入你的昵称: <input type="text" name="last_name" form="user_from">
+	<br />
+
+	<form action="#" method="get">
+	请输入网站: <input type="url" list="url_list" name="weburl">
+	<datalist id="url_list">
+		<option label="新浪" value="http://www.sina.com.cn"></option>
+		<option label="搜狐" value="www.sohu.com"></option>
+		<option label="QQ"   value="www.qq.com"></option>
+		</datalist>
+		<input type="submit" value="提交">
+		</form>
+
+		<from action="#" method="get">
+		电子邮件: <input type="emial" name="myemail"  multiple="multiple"><br /><br />
+		上传照片: <input type="file" name="selfile" multiple="multiple"><br /><br />
+		<input type="submit" value="提交">
+
+		</from>
+
+
+	
+</body>
+</html>
